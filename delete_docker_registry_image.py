@@ -3,6 +3,7 @@
 Usage:
 Shut down your registry service to avoid race conditions and possible data loss
 and then run the command with an image repo like this:
+export REGISTRY_DATA_DIR="/var/lib/docker/registry/v2"
 delete_docker_registry_image.py --image awesomeimage --dry-run
 """
 
